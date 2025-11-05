@@ -1,0 +1,74 @@
+.saved-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.empty-message {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.city-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.city-card {
+  background: #f0f4f8;
+  border: 1px solid #cde0f7;
+  border-radius: 12px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.city-info h2 {
+  margin: 0 0 8px 0;
+  color: #005fa3;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.remove-btn {
+  background: #ff6b6b;
+  color: white;
+}
+
+.remove-btn:hover {
+  background: #e34e4e;
+}
+
+.clear-btn {
+  background: #ff9800;
+  color: white;
+}
+
+.clear-btn:hover {
+  background: #e68900;
+}
+.actions {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
