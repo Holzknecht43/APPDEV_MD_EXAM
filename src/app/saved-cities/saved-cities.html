@@ -1,0 +1,24 @@
+<div class="saved-container">
+  <h2>📁 Saved Cities</h2>
+
+  <div *ngIf="cities.length > 0; else noCities">
+    <div class="city-list">
+      <div class="city-card" *ngFor="let c of cities">
+        <div class="city-info">
+          <h2>{{ c.name }}</h2>
+          <p>{{ c.temp }}°C — {{ c.desc }}</p>
+        </div>
+        <button class="btn remove-btn" (click)="removeCity(c.name)">❌ Remove</button>
+      </div>
+    </div>
+
+    <div class="actions">
+    </div>
+  </div>
+
+  <ng-template #noCities>
+    <div class="empty-message">
+      <p>No saved cities yet. Go back and add some!</p>
+    </div>
+  </ng-template>
+</div>
